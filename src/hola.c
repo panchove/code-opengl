@@ -13,11 +13,10 @@ void drawTriangle()
     glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
 
     glBegin(GL_TRIANGLES);
-    glVertex3f(-0.7, 0.7, 0);
-    glVertex3f(0.7, 0.7, 0);
-    glVertex3f(0, -1, 0);
+        glVertex3f(-0.7, 0.7, 0);
+        glVertex3f(0.7, 0.7, 0);
+        glVertex3f(0, -1, 0);
     glEnd();
-
     glFlush();
 }
 
@@ -40,6 +39,7 @@ void SizeAndCenterWindow(int width, int height, char *title)
 
 int main(int argc, char **argv)
 {
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE);
     SizeAndCenterWindow(640,480, "Hola Mundo en GLUT");
