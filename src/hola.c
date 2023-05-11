@@ -4,8 +4,7 @@
 //
 // A simple OpenGL program that draws a triangle.
 
-#include "GL/freeglut.h"
-#include "GL/gl.h"
+#include "wlut.hpp"
 
 void drawTriangle()
 {
@@ -39,6 +38,7 @@ void SizeAndCenterWindow(int width, int height, char *title)
 
 int main(int argc, char **argv)
 {
+    Wlut wlut = Wlut();
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE);
